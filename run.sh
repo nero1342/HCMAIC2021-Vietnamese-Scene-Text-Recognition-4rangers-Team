@@ -10,7 +10,7 @@ o=$2/exp
 echo "Detecting..."
 m_best="./weights/yolov5/yolov5m6_fold3_best.pt"
 l_best="./weights/yolov5/yolov5l6_fold3_best.pt"
-python3 src/det/yolov5/detect.py --weight $m_best $l_best --img 2304 --iou 0.15 --half --augment --conf-thres 0.4  --src $1 --save-txt --nosave --project $2 --exist-ok
+python3 src/det/yolov5/detect.py --weight $m_best $l_best --img 2304 --iou 0.15 --half --augment --conf-thres 0.4  --source $1 --save-txt --nosave --project $2 --exist-ok
 # python3 src/det/yolov5/detect.py --weight $m_best --img 360 --iou 0.15 --half --augment --conf-thres 0.4  --src $1 --save-txt --nosave --project $2 --exist-ok
 
 echo "Cropping images..."
