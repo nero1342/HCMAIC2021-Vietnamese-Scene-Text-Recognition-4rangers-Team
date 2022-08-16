@@ -39,9 +39,9 @@ model = dict(
         dict_type='DICT36',
         with_unknown=True,
         lower=True,
-        dict_file='source/config/mmocr/vn_dict.txt'),
+        dict_file='src/config/mmocr/vn_dict.txt'),
     max_seq_len=25)
-dict_file = 'source/config/mmocr/vn_dict.txt'
+dict_file = 'src/config/mmocr/vn_dict.txt'
 optimizer = dict(type='Adam', lr=0.0003)
 optimizer_config = dict(grad_clip=None)
 lr_config = dict(policy='step', step=[3, 4])

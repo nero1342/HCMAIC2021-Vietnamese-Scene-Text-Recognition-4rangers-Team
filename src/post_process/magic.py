@@ -9,7 +9,7 @@ special_vowel_char = 'ăâáắấàằầảẳẩãẵẫạặậđêéếè�
 
 specialCharacters=str(r'!?.:,*"()·[]/\'')
             
-dict_path = './source/post_process/vn_dict.txt'
+dict_path = './src/post_process/vn_dict.txt'
 vn_dict = set() 
 print("Learn Dictionary...")
 with open(dict_path,'r') as f:
@@ -163,7 +163,7 @@ def main(path, out_path):
                 # print(final_scores, *scores, file = fo) 
             total += 1 
 
-    make_archive(out_path, out_path + '.zip')
+    # make_archive(out_path, out_path + '.zip')
 
     # print(nonDict, total)
     # print("Fixed", fixed)
